@@ -1,5 +1,9 @@
 """Island selection functions."""
 
+from typing import Any
+
+App: Any = None
+
 
 def select_islands_by_pixel_size(max_u: int, max_v: int):
     """Select islands whose U or V pixel width is <= the given value.
