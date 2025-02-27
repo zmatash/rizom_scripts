@@ -1,4 +1,8 @@
-"""Island selection functions."""
+"""Select islands by pixel size.
+
+Tested on versions:
+    - Rizom 2024.1
+"""
 
 from typing import Any
 
