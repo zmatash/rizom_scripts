@@ -15,7 +15,6 @@ def select_islands_by_pixel_size(max_u: int, max_v: int):
 
     islands_to_select = []
     for id in islands.keys():
-        print(id)
         u_minus, u_plus, v_minus, v_plus, *_ = App.Eval(f"Lib.Mesh.Islands.{id}.GetBBoxUVW")
         u = (u_plus - u_minus) * resolution
         v = (v_plus - v_minus) * resolution
