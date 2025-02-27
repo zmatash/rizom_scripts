@@ -12,7 +12,6 @@ python = "^3.11"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.9.7"
 
-
 [tool.ruff]
 fix = true
 unsafe-fixes = false
