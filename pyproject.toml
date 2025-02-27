@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rizom-scripts"
+version = "0.1.0"
+description = ""
+authors = ["Matt Ashpole <m.d.ashpole@gmail.com>"]
+readme = "README.md"
+include = ["src"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.7"
+
+
+[tool.ruff]
+fix = true
+unsafe-fixes = false
+
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "R", "W", "I", "N", "D", "C", "PERF", "FURB", "RUF"]
+ignore = ["D417", "RUF012"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
