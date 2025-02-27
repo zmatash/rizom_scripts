@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Matt Ashpole <m.d.ashpole@gmail.com>"]
 readme = "README.md"
-include = ["src"]
+include = ["python"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
