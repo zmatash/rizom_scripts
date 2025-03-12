@@ -3,7 +3,7 @@
 --- Get islands by bounding box size, islands with U or V <= maxU or maxV will be selected.
 -- @param maxU (number) Maximum U size in pixels.
 -- @param maxV (number) Maximum V size in pixels.
-local function selectIslandsByPixelSize(maxU, maxV)
+local function selectIslandsByBBoxSize(maxU, maxV)
 	ZomSet({ Path = "Vars.EditMode.ElementMode", Value = 3 })
 
 	local currentUVMap = ZomGet("Lib.CurrentUVSetName")
@@ -37,4 +37,4 @@ local function selectIslandsByPixelSize(maxU, maxV)
 	})
 end
 
-selectIslandsByPixelSize(3, 3)
+selectIslandsByBBoxSize(3, 3)
