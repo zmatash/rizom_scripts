@@ -1,4 +1,4 @@
-"""Scene reset scripts."""
+"""Reset UV maps."""
 
 from typing import TYPE_CHECKING, Any
 from uuid import uuid4

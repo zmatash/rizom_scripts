@@ -1,4 +1,4 @@
-"""Island selection scripts."""
+"""Select islands by area."""
 
 from typing import TYPE_CHECKING, Any, Literal
 
