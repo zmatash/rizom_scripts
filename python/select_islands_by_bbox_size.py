@@ -20,10 +20,10 @@ def select_islands_by_bbox_size(u_size: float, v_size: float, mode: Literal["gre
 
     current_uvmap: str = App.Get("Lib.CurrentUVSetName")
     resolution: int = App.Get(f"Lib.UVSets.{current_uvmap}.RootGroup.Properties.Pack.MapResolution")
-    islands: dict = App.Get("Lib.Mesh.Islands")
+    islands = App.ItemNames("Lib.Mesh.Islands")
 
     islands_to_select = []
-    for id in islands.keys():
+    for id in islands:
         u_minus, u_plus, v_minus, v_plus, *_ = App.Eval(f"Lib.Mesh.Islands.{id}.GetBBoxUVW")
         u = (u_plus - u_minus) * resolution
         v = (v_plus - v_minus) * resolution

@@ -19,10 +19,10 @@ def select_islands_by_area(area: float, mode: Literal["greater", "less"]):
 
     current_uvmap: str = App.Get("Lib.CurrentUVSetName")
     resolution: int = App.Get(f"Lib.UVSets.{current_uvmap}.RootGroup.Properties.Pack.MapResolution")
-    islands: dict = App.Get("Lib.Mesh.Islands")
+    islands = App.ItemNames("Lib.Mesh.Islands")
 
     islands_to_select = []
-    for id in islands.keys():
+    for id in islands:
         island_area = App.Eval("Lib.Mesh.Islands.0.GetAreaUVW")
 
         if mode == "greater":
