@@ -4,5 +4,7 @@
         "ZomSet",
         "ZomEval",
         "ZomSelect"
-    ]
+    ],
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
 }
